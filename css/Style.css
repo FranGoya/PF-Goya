@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: starwars;
+    src: url(../fuentes/SfDistantGalaxyAlternate-OE4d.ttf);
+    
+
+}
+@font-face {
+    font-family:lotr ;
+    src: url(../fuentes/RINGM___.TTF);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    33% {
+        transform: rotate(5deg);
+    }
+
+    66% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+body header img {
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+/* BArra Navegacion */
+
+header {
+    height: 60Px;
+    background-image: linear-gradient(to right, white, #595959)
+}
+
+body header img {
+    width: 150px;
+}
+
+ul {
+    position: fixed;
+}
+
+nav {
+    background-color: white;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    border: 2px solid black;
+    float: left;
+}
+
+nav li a {
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+nav li a:hover {
+    background-color: #111;
+    color: white;
+    transition: color 1.5s;
+}
+
+
+/* main index */
+div {
+    display: inline-block;
+}
+
+main {
+    padding: 20px;
+    background-color: black;
+}
+
+img.banner {
+    border: 2px solid black;
+    float: right;
+    width: 600px;
+}
+
+div.instagram {
+    width: 300px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif}
+
+section article img {
+    width: 300px;
+}
+
+p {
+    color: white;
+    margin-top: 10px;
+    margin-right: 0x;
+    margin-left: 10px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+/* formulario */
+imput.consulta {}
+
+/* este imput.consulta lo hice para ajustar el cuadrado en el formulario para ajustar tamaño pero no funciono */
+
+/* footer */
+footer {
+    background-image: linear-gradient(to top, rgb(103, 102, 102), #030303)
+}
+
+
+ol li a {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    display: block;
+    color: rgb(219, 210, 210);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ol li a:hover {
+    background-color: #111;
+    color: white;
+    transition: color 1.5s;
+    text-decoration: underline;
+}
+
+/* seccion peliculas */
+.starwars {
+    border: 3px solid white;
+    background-image: url(../imagenes/starsbackround.jpg);
+    padding: 0%;
+    margin-bottom: 10px;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.lotr {
+    background-image: url(../imagenes/lotrbackground.jpg);
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.star {
+    color: #ffe81f;
+    font-family: starwars;
+    font-size: 40px;
+    animation: blink 5s infinite;
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: -10px;
+    margin-top: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-text {
+    color: black;
+}
+.btn-primary{
+    margin: 50px;
+}
+
+.card-img-top2 {
+    width: 270px;
+}
+.lord {
+    font-family: lotr;
+    font-size: 40px;
+    color:  #c4b479;
+    animation: blink 5s infinite;
+}
+
+@media ( max-width:420px) {}
+
