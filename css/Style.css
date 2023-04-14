@@ -79,6 +79,11 @@ body header img {
 .navbar {
     z-index: 999;
 }
+nav li a:hover {
+    background-color:rgb(0, 0, 0);
+    color: white !important;
+    transition: color 1.5s;
+}
 
 main {
     padding: 20px;
@@ -248,6 +253,13 @@ background-size: 100%;
         grid-gap: 10px;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
+        
+    }
+    .carousel {
+        border: 2px solid black;
+        float: right;
+        width: 100vw;
+        overflow: hidden;
     }
     
   }
