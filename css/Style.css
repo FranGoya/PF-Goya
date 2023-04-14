@@ -198,6 +198,7 @@ ol li a:hover {
     width: 100%;
     background-position: center;
     background-attachment: fixed;
+    bac
 }
 
 .lotr {
@@ -258,5 +259,32 @@ ol li a:hover {
     animation: blink 5s infinite;
 }
 
-@media ( max-width:420px) {}
 
+
+@media (max-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .container {
+      display: block;
+    }
+  
+    .card {
+      width: 100%;
+    }
+    .starwars {
+background-size: 100%;
+    }
+  }
+  @media (max-width: 420px) {
+    .grid-container {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+  }
