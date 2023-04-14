@@ -74,43 +74,7 @@ body header img {
     width: 150px;
 }
 
-ul {
-    position: fixed;
-}
 
-nav {
-    background-color: white;
-    overflow: hidden;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    border: 2px solid black;
-    float: left;
-}
-
-nav li a {
-    background-color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-
-}
-
-nav li a:hover {
-    background-color: #111;
-    color: white;
-    transition: color 1.5s;
-}
 
 
 /* main index */
@@ -198,7 +162,6 @@ ol li a:hover {
     width: 100%;
     background-position: center;
     background-attachment: fixed;
-    bac
 }
 
 .lotr {
@@ -287,4 +250,5 @@ background-size: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
+    
   }
