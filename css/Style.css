@@ -15,6 +15,21 @@
     src: url(../fuentes/RINGM___.TTF);
 }
 
+@font-face {
+    font-family: warcraft;
+    src: url(../fuentes/LifeCraft_Font.ttf);
+}
+
+@font-face {
+    font-family: darksouls;
+    src: url(../fuentes/OptimusPrincepsSemiBold.ttf);
+}
+
+@font-face {
+    font-family: league;
+    src: url(../fuentes/Friz\ Quadrata\ Regular.ttf);
+}
+
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
@@ -89,16 +104,17 @@ nav li a:hover {
 }
 
 main {
-    
+
     padding: 20px;
     background-image: url(../imagenes/2.jpg);
 }
+
 .maincontainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
+}
+
 
 .carousel {
     border: 2px solid black;
@@ -153,7 +169,7 @@ footer {
 }
 
 
-.ul-footer li a{    
+.ul-footer li a {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
     display: block;
@@ -183,15 +199,63 @@ footer {
 }
 
 .lotr {
+    border: 3px solid white;
     background-image: url(../imagenes/lotrbackground.jpg);
     background-position: center;
     background-attachment: fixed;
 
 }
 
+.Warcraft {
+    border: 3px solid white;
+    background-image: url(../imagenes/warcraftback.jpg);
+    padding: 0%;
+    margin-bottom: 10px;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.Darksouls {
+    border: 3px solid white;
+    background-image: url(../imagenes/dsback1.jpeg);
+    padding: 0%;
+    margin-bottom: 10px;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+.Lol {
+    border: 3px solid white;
+    background-image: url(../imagenes/lolback.jpg);
+    padding: 0%;
+    margin-bottom: 10px;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+
+
 .star {
     color: #ffe81f;
     font-family: starwars;
+    font-size: 40px;
+    animation: blink 5s infinite;
+
+}
+
+.DarksoulsTitle {
+    font-family: darksouls;
+    font-size: 40px;
+    animation: blink 5s infinite;
+
+}
+.LeagueTitle {
+    color: #ffe81f;
+    font-family: league;
     font-size: 40px;
     animation: blink 5s infinite;
 
@@ -242,6 +306,15 @@ footer {
     animation: blink 5s infinite;
 }
 
+.WarcraftTitle {
+    font-family: warcraft;
+    font-size: 40px;
+    color: red;
+    animation: blink 5s infinite;
+
+}
+
+
 
 
 @media (max-width: 768px) {
@@ -269,6 +342,7 @@ footer {
     }
 }
 
+
 @media (max-width: 420px) {
     .grid-container {
         display: grid;
@@ -291,6 +365,6 @@ footer {
         text-align: center;
     }
 
-    
+
 
 }
