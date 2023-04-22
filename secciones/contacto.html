@@ -26,7 +26,7 @@
                     <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./secciones/contacto.html">Contacto</a>
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -53,17 +53,19 @@
     </header>
     <main>
         <br><br>
-        <form class="ContactForm" action="#" method="get" enctype="text/plain">
-            <input type="text" placeholder="Nombre y apellido" name="Nombre">
-            <br><br>
-            <input type="email" placeholder="Mail" name="Mail">
-            <br><br>
-            <input type="number" placeholder="Telefono" name="Telefono" id="">
-            <br><br>
-            <input class="Consulta" type="text" placeholder="Tu consulta" name="Consulta">
-            <input type="submit" value="Consultame">
-
-        </form>
+        <section class="seccion-contacto">
+        <form action="" class="formulario">
+          <label for="nombre" class="labels"></label>
+          <input type="text" placeholder="Nombre" name="nombre" class="inputs">
+          <label for="apellido" class="labels"></label>
+          <input type="text" placeholder="Apellido" name="apellido" class="inputs">
+          <label for="correo" class="labels"></label>
+          <input type="email" placeholder="Email" name="correo" class="inputs">
+          <label for="comentarios" class="labels"></label>
+          <textarea id="comentarios" placeholder="Dejame tu comentario" name="comentarios" rows="5" class="comentarios"></textarea>
+          <button type="submit" class="button">Enviar</button>
+      </form>
+    </section>
         <br><br>
         <h1 class="ContactoRedesh1">Tambien podes contactarme por mis redes sociales!</h1>
     </main>

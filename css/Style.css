@@ -143,11 +143,22 @@ h1 {
 
 h2 {
     color: white;
-    text-align: center;
+    text-align: center !important;
     text-decoration: underline;
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
+
+
+h3 {  
+    color: white;
+    text-align: center ;
+    text-decoration: underline;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+
 
 section article img {
     width: 300px;
@@ -163,9 +174,65 @@ p {
 }
 
 /* formulario */
-.consulta {
-    width: 20px;
+.seccion-contacto {
+    display: flex;
+    
+    width: 50%;
+    height: 50%;
+    margin: 40px ; 
 }
+    .seccion-contacto .contacto {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  justify-content: center;
+      width: 80%;
+      height: 100%; }
+      .seccion-contacto .contacto h1 {
+        margin-bottom: 10px; }
+      .seccion-contacto .contacto img {
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 10px; }
+    .seccion-contacto .formulario {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      margin-left: 60px; }
+      .seccion-contacto .formulario .inputs {
+        font-family: "Comfortaa";
+        padding: 10px 15px;
+        border-radius: 8px;
+        color: #30475E;
+        border: 1px solid #F5F5F5;
+        margin-bottom: 10px; }
+      .seccion-contacto .formulario ::placeholder {
+        font-family: 'Comfortaa';
+        color: #30475e63; }
+      .seccion-contacto .formulario .comentarios {
+        width: 100%;
+        max-height: 100px;
+        padding: 10px 20px;
+        border-radius: 8px;
+        color: #30475E;
+        border: 1px solid #F5F5F5;
+        margin-bottom: 10px; }
+      .seccion-contacto .formulario ::placeholder {
+        font-family: 'Comfortaa';
+        color: #30475e63; }
+      .seccion-contacto .formulario .labels {
+        font-family: 'Comfortaa';
+        padding-bottom: 5px; }
+      .seccion-contacto .formulario .button {
+        font-family: 'Comfortaa';
+        margin: 10px 0;
+        background-color: #3a8055;
+        color: #F5F5F5;
+        border-radius: 6px;
+        padding: 10px;
+        border: none; }
+  
 
 /* este imput.consulta lo hice para ajustar el cuadrado en el formulario para ajustar tamaño pero no funciono */
 
@@ -173,6 +240,11 @@ p {
 footer {
     background-image: linear-gradient(to top, rgb(103, 102, 102), #030303);
 }
+
+ul {
+    list-style: none;
+}
+
 
 
 .ul-footer li a {
@@ -210,6 +282,22 @@ footer {
     background-position: center;
     background-attachment: fixed;
 
+}
+.musicos{border: 3px solid white;
+    padding: 0%;
+    margin-bottom: 10px;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.deportistas{
+    border: 3px solid white;
+    padding: 0%;
+    margin-bottom: 10px;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .Warcraft {
@@ -283,6 +371,16 @@ footer {
     grid-template-rows: 1fr 1fr;
 }
 
+.container-musicos{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+}
+
+.container-deportistas {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+}
+
 .grid-item img {
     max-width: 100%;
     height: auto;
@@ -290,7 +388,7 @@ footer {
     opacity: 1 !important;
 }
 .card{
-    opacity: 0.85;
+    opacity: 0.8;}
 
 .card-title {
     text-align: center;
