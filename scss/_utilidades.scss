@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: starwars;
+    src: url(../fuentes/SfDistantGalaxyAlternate-OE4d.ttf);
+
+
+}
+
+@font-face {
+    font-family: lotr;
+    src: url(../fuentes/RINGM___.TTF);
+}
+
+@font-face {
+    font-family: warcraft;
+    src: url(../fuentes/LifeCraft_Font.ttf);
+}
+
+@font-face {
+    font-family: darksouls;
+    src: url(../fuentes/OptimusPrincepsSemiBold.ttf);
+}
+
+@font-face {
+    font-family: league;
+    src: url(../fuentes/Regular.ttf);
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    33% {
+        transform: rotate(5deg);
+    }
+
+    66% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}

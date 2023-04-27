@@ -1,506 +1,369 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
-}
+  margin: 0;
+  padding: 0; }
 
 @font-face {
-    font-family: starwars;
-    src: url(../fuentes/SfDistantGalaxyAlternate-OE4d.ttf);
-
-
-}
+  font-family: starwars;
+  src: url(../fuentes/SfDistantGalaxyAlternate-OE4d.ttf); }
 
 @font-face {
-    font-family: lotr;
-    src: url(../fuentes/RINGM___.TTF);
-}
+  font-family: lotr;
+  src: url(../fuentes/RINGM___.TTF); }
 
 @font-face {
-    font-family: warcraft;
-    src: url(../fuentes/LifeCraft_Font.ttf);
-}
+  font-family: warcraft;
+  src: url(../fuentes/LifeCraft_Font.ttf); }
 
 @font-face {
-    font-family: darksouls;
-    src: url(../fuentes/OptimusPrincepsSemiBold.ttf);
-}
+  font-family: darksouls;
+  src: url(../fuentes/OptimusPrincepsSemiBold.ttf); }
 
 @font-face {
-    font-family: league;
-    src: url(../fuentes/Friz\ Quadrata\ Regular.ttf);
-}
+  font-family: league;
+  src: url(../fuentes/Regular.ttf); }
 
 @keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    33% {
-        transform: rotate(5deg);
-    }
-
-    66% {
-        transform: rotate(-5deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-}
+  0% {
+    transform: rotate(0deg); }
+  33% {
+    transform: rotate(5deg); }
+  66% {
+    transform: rotate(-5deg); }
+  100% {
+    transform: rotate(0deg); } }
 
 @keyframes blink {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 @keyframes appear {
-    from {
-        width: 0;
-    }
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
 
-    to {
-        width: 100%;
-    }
-}
-
-body header img {
+body header {
+  height: 60px;
+  background-image: linear-gradient(to right, white, #595959); }
+  body header img {
+    width: 150px;
     animation-name: rotate;
     animation-duration: 2s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
+    animation-iteration-count: infinite; }
 
-
-/* BArra Navegacion */
-
-header {
-    height: 60Px;
-    background-image: linear-gradient(to right, white, #595959)
-}
-
-body header img {
-    width: 150px;
-}
-
-
-/* main index */
 .navbar {
-    background-image: linear-gradient(to right, white, #595959);
-    font-family: sans-serif;
-    font-weight: bold;
-    z-index: 999
-}
-
+  background-image: linear-gradient(to right, white, #595959);
+  font-family: sans-serif;
+  font-weight: bold;
+  z-index: 999; }
 
 nav li a:hover {
-    background-color: rgb(0, 0, 0) !important;
-    color: white !important;
-    transition: color 1.5s;
-}
+  background-color: black !important;
+  color: white !important;
+  transition: color 1.5s; }
 
 main {
-
-    padding: 20px;
-    background-image: url(../imagenes/2.jpg);
-}
-
-.maincontainer {
+  padding: 20px;
+  background-image: url(../imagenes/2.jpg); }
+  main .maincontainer {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-
-.carousel {
+    align-items: center; }
+  main .carousel {
     border: 2px solid black;
     float: right;
-    width: 50vw;
-}
-
-
-
-div.instagram {
-    width: 300px;
-}
-
-h1 {
-    color: white;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-}
-
-h2 {
-    color: white;
-    text-align: center !important;
-    text-decoration: underline;
-    font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-}
-
-
-h3 {
-    color: white;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-}
-
-
-
-section article img {
-    width: 300px;
-}
+    width: 50vw; }
 
 p {
-    color: white;
-    margin-top: 10px;
-    margin-right: 0x;
-    margin-left: 10px;
-    padding: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-}
+  color: white;
+  margin-top: 10px;
+  margin-right: 0x;
+  margin-left: 10px;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+footer {
+  background-image: linear-gradient(to top, #676666, #030303); }
+
+ul {
+  list-style: none; }
+
+.ul-footer li a {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  display: block;
+  color: #dbd2d2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; }
+
+.ul-footer li a:hover {
+  background-color: #111;
+  color: white;
+  transition: color 1.5s;
+  text-decoration: underline; }
+
+h1 {
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+h2 {
+  color: white;
+  text-align: center !important;
+  text-decoration: underline;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+h3 {
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+section article img {
+  width: 300px; }
 
 /* formulario */
 .seccion-contacto {
-    display: flex;
-
-    width: 50%;
-    height: 50%;
-    margin: 40px;
-}
+  display: flex;
+  width: 50%;
+  height: 50%;
+  margin: 40px; }
 
 .seccion-contacto .contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    height: 100%;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 100%; }
 
 .seccion-contacto .contacto h1 {
-    margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 .seccion-contacto .contacto img {
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 10px;
-}
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px; }
 
 .seccion-contacto .formulario {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    margin-left: 60px;
-}
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-left: 60px; }
 
 .seccion-contacto .formulario .inputs {
-    font-family: "Comfortaa";
-    padding: 10px 15px;
-    border-radius: 8px;
-    color: #30475E;
-    border: 1px solid #F5F5F5;
-    margin-bottom: 10px;
-}
+  font-family: "Comfortaa";
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #30475E;
+  border: 1px solid #F5F5F5;
+  margin-bottom: 10px; }
 
 .seccion-contacto .formulario ::placeholder {
-    font-family: 'Comfortaa';
-    color: #30475e63;
-}
+  font-family: 'Comfortaa';
+  color: #30475e63; }
 
 .seccion-contacto .formulario .comentarios {
-    width: 100%;
-    max-height: 100px;
-    padding: 10px 20px;
-    border-radius: 8px;
-    color: #30475E;
-    border: 1px solid #F5F5F5;
-    margin-bottom: 10px;
-}
+  width: 100%;
+  max-height: 100px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #30475E;
+  border: 1px solid #F5F5F5;
+  margin-bottom: 10px; }
 
 .seccion-contacto .formulario ::placeholder {
-    font-family: 'Comfortaa';
-    color: #30475e63;
-}
+  font-family: 'Comfortaa';
+  color: #30475e63; }
 
 .seccion-contacto .formulario .labels {
-    font-family: 'Comfortaa';
-    padding-bottom: 5px;
-}
+  font-family: 'Comfortaa';
+  padding-bottom: 5px; }
 
 .seccion-contacto .formulario .button {
-    font-family: 'Comfortaa';
-    margin: 10px 0;
-    background-color: #3a8055;
-    color: #F5F5F5;
-    border-radius: 6px;
-    padding: 10px;
-    border: none;
-}
-
+  font-family: 'Comfortaa';
+  margin: 10px 0;
+  background-color: #3a8055;
+  color: #F5F5F5;
+  border-radius: 6px;
+  padding: 10px;
+  border: none; }
 
 /* este imput.consulta lo hice para ajustar el cuadrado en el formulario para ajustar tamaño pero no funciono */
-
 /* footer */
-footer {
-    background-image: linear-gradient(to top, rgb(103, 102, 102), #030303);
-}
-
-ul {
-    list-style: none;
-}
-
-
-
-.ul-footer li a {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
-    display: block;
-    color: rgb(219, 210, 210);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.ul-footer li a:hover {
-    background-color: #111;
-    color: white;
-    transition: color 1.5s;
-    text-decoration: underline;
-}
-
-
 /* seccion peliculas */
 .starwars {
-    border: 3px solid white;
-    background-image: url(../imagenes/starsbackround.jpg);
-    padding: 0%;
-    margin-bottom: 10px;
-    width: 100%;
-    background-position: center;
-    background-attachment: fixed;
-}
+  border: 3px solid white;
+  background-image: url(../imagenes/starsbackround.jpg);
+  padding: 0%;
+  margin-bottom: 10px;
+  width: 100%;
+  background-position: center;
+  background-attachment: fixed; }
 
 .lotr {
-    border: 3px solid white;
-    background-image: url(../imagenes/lotrbackground.jpg);
-    background-position: center;
-    background-attachment: fixed;
-
-}
+  border: 3px solid white;
+  background-image: url(../imagenes/lotrbackground.jpg);
+  background-position: center;
+  background-attachment: fixed; }
 
 .musicos {
-    border: 3px solid white;
-    padding: 0%;
-    margin-bottom: 10px;
-    width: 100%;
-    background-position: center;
-    background-attachment: fixed;
-
-}
+  border: 3px solid white;
+  padding: 0%;
+  margin-bottom: 10px;
+  width: 100%;
+  background-position: center;
+  background-attachment: fixed; }
 
 .deportistas {
-    border: 3px solid white;
-    padding: 0%;
-    margin-bottom: 10px;
-    width: 100%;
-    background-position: center;
-    background-attachment: fixed;
-}
+  border: 3px solid white;
+  padding: 0%;
+  margin-bottom: 10px;
+  width: 100%;
+  background-position: center;
+  background-attachment: fixed; }
 
 .Warcraft {
-    border: 3px solid white;
-    background-image: url(../imagenes/warcraftback.jpg);
-    padding: 0%;
-    margin-bottom: 10px;
-    width: 100%;
-    background-position: center;
-    background-attachment: fixed;
-}
+  border: 3px solid white;
+  background-image: url(../imagenes/warcraftback.jpg);
+  padding: 0%;
+  margin-bottom: 10px;
+  width: 100%;
+  background-position: center;
+  background-attachment: fixed; }
 
 .Darksouls {
-    border: 3px solid white;
-    background-image: url(../imagenes/dsback1.jpeg);
-    padding: 0%;
-    margin-bottom: 10px;
-    width: 100%;
-    background-position: center;
-    background-attachment: fixed;
-}
+  border: 3px solid white;
+  background-image: url(../imagenes/dsback1.jpeg);
+  padding: 0%;
+  margin-bottom: 10px;
+  width: 100%;
+  background-position: center;
+  background-attachment: fixed; }
 
 .Lol {
-    border: 3px solid white;
-    background-image: url(../imagenes/lolback.jpg);
-    padding: 0%;
-    margin-bottom: 10px;
-    width: 100%;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-
-
-
+  border: 3px solid white;
+  background-image: url(../imagenes/lolback.jpg);
+  padding: 0%;
+  margin-bottom: 10px;
+  width: 100%;
+  background-position: center;
+  background-attachment: fixed; }
 
 .star {
-    color: #ffe81f;
-    font-family: starwars;
-    font-size: 40px;
-    animation: blink 5s infinite;
-
-}
+  color: #ffe81f;
+  font-family: starwars;
+  font-size: 40px;
+  animation: blink 5s infinite; }
 
 .DarksoulsTitle {
-    font-family: darksouls;
-    font-size: 40px;
-    animation: blink 5s infinite;
-
-}
+  font-family: darksouls;
+  font-size: 40px;
+  animation: blink 5s infinite; }
 
 .LeagueTitle {
-    color: #ffe81f;
-    font-family: league;
-    font-size: 40px;
-    animation: blink 5s infinite;
-
-}
+  color: #ffe81f;
+  font-family: league;
+  font-size: 40px;
+  animation: blink 5s infinite; }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: -10px;
-    margin-top: 10px;
-}
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: -10px;
+  margin-top: 10px; }
 
 .grid-container {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr; }
 
 .container-musicos {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-}
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr; }
 
 .container-deportistas {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-}
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr; }
 
 .grid-item img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    opacity: 1 !important;
-}
+  max-width: 100%;
+  height: auto;
+  display: block;
+  opacity: 1 !important; }
 
 .card {
-    opacity: 0.8;
-}
+  opacity: 0.8; }
 
 .card-title {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-}
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder; }
 
 .card-text {
-    color: black;
-    font-family: sans-serif;
-}
+  color: black;
+  font-family: sans-serif; }
 
 .btn-primary {
-    margin: 50px;
-}
+  margin: 50px; }
 
 .card-img-top2 {
-    width: 270px;
-}
+  width: 270px; }
 
 .lord {
-    font-family: lotr;
-    font-size: 40px;
-    color: #c4b479;
-    animation: blink 5s infinite;
-}
+  font-family: lotr;
+  font-size: 40px;
+  color: #c4b479;
+  animation: blink 5s infinite; }
 
 .WarcraftTitle {
-    font-family: warcraft;
-    font-size: 40px;
-    color: red;
-    animation: blink 5s infinite;
-
-}
-
-
-
+  font-family: warcraft;
+  font-size: 40px;
+  color: red;
+  animation: blink 5s infinite; }
 
 @media (max-width: 768px) {
-    .grid-container {
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-
-    .container {
-        display: block;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .starwars {
-        background-size: 100%;
-    }
-
-    .ContactoRedesh1 {
-        overflow: hidden;
-    }
-}
-
+  .grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; }
+  .container {
+    display: block; }
+  .card {
+    width: 100%; }
+  .starwars {
+    background-size: 100%; }
+  .ContactoRedesh1 {
+    overflow: hidden; } }
 
 @media (max-width: 420px) {
-    .grid-container {
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-
-    }
-
-    .carousel {
-        border: 2px solid black;
-        float: right;
-        width: 100vw;
-        overflow: hidden;
-    }
-
-    .ContactoRedesh1 {
-        overflow: hidden;
-        font-size: small;
-        text-align: center;
-    }
-
-
-
-}
+  .grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; }
+  .carousel {
+    border: 2px solid black;
+    float: right;
+    width: 100vw;
+    overflow: hidden; }
+  .ContactoRedesh1 {
+    overflow: hidden;
+    font-size: small;
+    text-align: center; } }
