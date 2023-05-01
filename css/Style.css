@@ -47,68 +47,6 @@
   to {
     width: 100%; } }
 
-h1 {
-  color: white;
-  text-align: center;
-  text-decoration: underline;
-  font-size: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
-
-h2 {
-  color: white;
-  text-align: center !important;
-  text-decoration: underline;
-  font-size: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
-
-h3 {
-  color: white;
-  text-align: center;
-  text-decoration: underline;
-  font-size: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
-
-section article img {
-  width: 300px; }
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-left: -10px;
-  margin-top: 10px; }
-  .container .grid-container {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr; }
-  .container .container-musicos {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr; }
-  .container .container-deportistas {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr; }
-  .container .grid-item img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    opacity: 1 !important; }
-
-.card {
-  opacity: 0.8; }
-  .card .card-title {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder; }
-  .card .card-text {
-    color: black;
-    font-family: sans-serif; }
-  .card .btn-primary {
-    margin: 50px; }
-  .card .card-img-top2 {
-    width: 270px; }
-
 body header {
   height: 60px;
   background-image: linear-gradient(to right, white, #595959); }
