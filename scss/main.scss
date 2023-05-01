@@ -1,3 +1,9 @@
+@import './utilities/colores';
+@import './utilities/fonts';
+
+
+
+
 @import './utilidades';
 @import './header';
 @import './principal';
@@ -7,38 +13,6 @@
 @import './paginas/contacto';
 
 
-
-
-/* formulario */
-
-
-
-/* este imput.consulta lo hice para ajustar el cuadrado en el formulario para ajustar tamaño pero no funciono */
-
-/* footer */
-
-
-/* seccion peliculas */
-
-
-.musicos {
-    border: 3px solid white;
-    padding: 0%;
-    margin-bottom: 10px;
-    width: 100%;
-    background-position: center;
-    background-attachment: fixed;
-
-}
-
-.deportistas {
-    border: 3px solid white;
-    padding: 0%;
-    margin-bottom: 10px;
-    width: 100%;
-    background-position: center;
-    background-attachment: fixed;
-}
 
 
 
