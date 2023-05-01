@@ -2,126 +2,15 @@
 @import './header';
 @import './principal';
 @import './footer';
+@import './paginas/peliculas';
+@import './paginas/juegos';
+@import './paginas/contacto';
 
 
-
-
-
-
-
-
-
-h1 {
-    color: white;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-}
-
-h2 {
-    color: white;
-    text-align: center !important;
-    text-decoration: underline;
-    font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-}
-
-
-h3 {
-    color: white;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-}
-
-
-
-section article img {
-    width: 300px;
-}
 
 
 /* formulario */
-.seccion-contacto {
-    display: flex;
 
-    width: 50%;
-    height: 50%;
-    margin: 40px;
-}
-
-.seccion-contacto .contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    height: 100%;
-}
-
-.seccion-contacto .contacto h1 {
-    margin-bottom: 10px;
-}
-
-.seccion-contacto .contacto img {
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-
-.seccion-contacto .formulario {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    margin-left: 60px;
-}
-
-.seccion-contacto .formulario .inputs {
-    font-family: "Comfortaa";
-    padding: 10px 15px;
-    border-radius: 8px;
-    color: #30475E;
-    border: 1px solid #F5F5F5;
-    margin-bottom: 10px;
-}
-
-.seccion-contacto .formulario ::placeholder {
-    font-family: 'Comfortaa';
-    color: #30475e63;
-}
-
-.seccion-contacto .formulario .comentarios {
-    width: 100%;
-    max-height: 100px;
-    padding: 10px 20px;
-    border-radius: 8px;
-    color: #30475E;
-    border: 1px solid #F5F5F5;
-    margin-bottom: 10px;
-}
-
-.seccion-contacto .formulario ::placeholder {
-    font-family: 'Comfortaa';
-    color: #30475e63;
-}
-
-.seccion-contacto .formulario .labels {
-    font-family: 'Comfortaa';
-    padding-bottom: 5px;
-}
-
-.seccion-contacto .formulario .button {
-    font-family: 'Comfortaa';
-    margin: 10px 0;
-    background-color: #3a8055;
-    color: #F5F5F5;
-    border-radius: 6px;
-    padding: 10px;
-    border: none;
-}
 
 
 /* este imput.consulta lo hice para ajustar el cuadrado en el formulario para ajustar tamaño pero no funciono */
@@ -130,23 +19,7 @@ section article img {
 
 
 /* seccion peliculas */
-.starwars {
-    border: 3px solid white;
-    background-image: url(../imagenes/starsbackround.jpg);
-    padding: 0%;
-    margin-bottom: 10px;
-    width: 100%;
-    background-position: center;
-    background-attachment: fixed;
-}
 
-.lotr {
-    border: 3px solid white;
-    background-image: url(../imagenes/lotrbackground.jpg);
-    background-position: center;
-    background-attachment: fixed;
-
-}
 
 .musicos {
     border: 3px solid white;
@@ -167,133 +40,6 @@ section article img {
     background-attachment: fixed;
 }
 
-.Warcraft {
-    border: 3px solid white;
-    background-image: url(../imagenes/warcraftback.jpg);
-    padding: 0%;
-    margin-bottom: 10px;
-    width: 100%;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.Darksouls {
-    border: 3px solid white;
-    background-image: url(../imagenes/dsback1.jpeg);
-    padding: 0%;
-    margin-bottom: 10px;
-    width: 100%;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.Lol {
-    border: 3px solid white;
-    background-image: url(../imagenes/lolback.jpg);
-    padding: 0%;
-    margin-bottom: 10px;
-    width: 100%;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-
-
-
-
-.star {
-    color: #ffe81f;
-    font-family: starwars;
-    font-size: 40px;
-    animation: blink 5s infinite;
-
-}
-
-.DarksoulsTitle {
-    font-family: darksouls;
-    font-size: 40px;
-    animation: blink 5s infinite;
-
-}
-
-.LeagueTitle {
-    color: #ffe81f;
-    font-family: league;
-    font-size: 40px;
-    animation: blink 5s infinite;
-
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: -10px;
-    margin-top: 10px;
-}
-
-.grid-container {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-.container-musicos {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-}
-
-.container-deportistas {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-}
-
-.grid-item img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    opacity: 1 !important;
-}
-
-.card {
-    opacity: 0.8;
-}
-
-.card-title {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-}
-
-.card-text {
-    color: black;
-    font-family: sans-serif;
-}
-
-.btn-primary {
-    margin: 50px;
-}
-
-.card-img-top2 {
-    width: 270px;
-}
-
-.lord {
-    font-family: lotr;
-    font-size: 40px;
-    color: #c4b479;
-    animation: blink 5s infinite;
-}
-
-.WarcraftTitle {
-    font-family: warcraft;
-    font-size: 40px;
-    color: red;
-    animation: blink 5s infinite;
-
-}
 
 
 

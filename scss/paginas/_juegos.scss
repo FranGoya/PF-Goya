@@ -1,0 +1,59 @@
+.Warcraft {
+    border: 3px solid white;
+    background-image: url(../imagenes/warcraftback.jpg);
+    padding: 0%;
+    margin-bottom: 10px;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    .WarcraftTitle {
+        font-family: warcraft;
+        font-size: 40px;
+        color: red;
+        animation: blink 5s infinite;
+    
+    }
+    
+}
+
+.Darksouls {
+    border: 3px solid white;
+    background-image: url(../imagenes/dsback1.jpeg);
+    padding: 0%;
+    margin-bottom: 10px;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+.DarksoulsTitle {
+    font-family: darksouls;
+    font-size: 40px;
+    animation: blink 5s infinite;
+
+}
+}
+
+
+.Lol {
+    border: 3px solid white;
+    background-image: url(../imagenes/lolback.jpg);
+    padding: 0%;
+    margin-bottom: 10px;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    .LeagueTitle {
+        color: #ffe81f;
+        font-family: league;
+        font-size: 40px;
+        animation: blink 5s infinite;
+    
+    }
+}
+
+
+
+
+
+
+
+
