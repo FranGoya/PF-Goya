@@ -1,13 +1,9 @@
 @import './utilities/colores';
 @import './utilities/fonts';
-
-
-
-
 @import './utilidades';
-@import './header';
-@import './principal';
-@import './footer';
+@import './sections/header';
+@import './sections/principal';
+@import './sections/footer';
 @import './paginas/peliculas';
 @import './paginas/juegos';
 @import './paginas/contacto';

@@ -1,8 +1,3 @@
-@charset "UTF-8";
-* {
-  margin: 0;
-  padding: 0; }
-
 @font-face {
   font-family: starwars;
   src: url(../fuentes/SfDistantGalaxyAlternate-OE4d.ttf); }
@@ -22,6 +17,10 @@
 @font-face {
   font-family: league;
   src: url(../fuentes/Regular.ttf); }
+
+* {
+  margin: 0;
+  padding: 0; }
 
 @keyframes rotate {
   0% {
@@ -291,26 +290,6 @@ footer {
       border-radius: 6px;
       padding: 10px;
       border: none; }
-
-/* formulario */
-/* este imput.consulta lo hice para ajustar el cuadrado en el formulario para ajustar tamaño pero no funciono */
-/* footer */
-/* seccion peliculas */
-.musicos {
-  border: 3px solid white;
-  padding: 0%;
-  margin-bottom: 10px;
-  width: 100%;
-  background-position: center;
-  background-attachment: fixed; }
-
-.deportistas {
-  border: 3px solid white;
-  padding: 0%;
-  margin-bottom: 10px;
-  width: 100%;
-  background-position: center;
-  background-attachment: fixed; }
 
 @media (max-width: 768px) {
   .grid-container {
