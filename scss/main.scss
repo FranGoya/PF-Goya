@@ -7,61 +7,7 @@
 @import './paginas/peliculas';
 @import './paginas/juegos';
 @import './paginas/contacto';
+@import './sections/responsive.scss';
 
 
 
-
-
-
-
-@media (max-width: 768px) {
-    .grid-container {
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-
-    .container {
-        display: block;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .starwars {
-        background-size: 100%;
-    }
-
-    .ContactoRedesh1 {
-        overflow: hidden;
-    }
-}
-
-
-@media (max-width: 420px) {
-    .grid-container {
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-
-    }
-
-    .carousel {
-        border: 2px solid black;
-        float: right;
-        width: 100vw;
-        overflow: hidden;
-    }
-
-    .ContactoRedesh1 {
-        overflow: hidden;
-        font-size: small;
-        text-align: center;
-    }
-
-
-
-}
