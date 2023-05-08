@@ -58,7 +58,7 @@ body header {
 
 .navbar {
   background-image: linear-gradient(to right, white, #595959);
-  font-family: sans-serif;
+  font-family: lotr;
   font-weight: bold;
   z-index: 999; }
 
@@ -149,7 +149,7 @@ section article img {
     font-weight: bolder; }
   .card .card-text {
     color: black;
-    font-family: sans-serif; }
+    font-family: Verdana; }
   .card .btn-primary {
     margin: 50px; }
   .card .card-img-top2 {
@@ -311,7 +311,11 @@ footer {
   .starwars {
     background-size: 100%; }
   .ContactoRedesh1 {
-    overflow: hidden; } }
+    overflow: hidden; }
+  .dropdown-menu {
+    overflow: hidden; }
+  form .d-flex {
+    display: none; } }
 
 @media (max-width: 420px) {
   .grid-container {
@@ -327,4 +331,8 @@ footer {
   .ContactoRedesh1 {
     overflow: hidden;
     font-size: small;
-    text-align: center; } }
+    text-align: center; }
+  .dropdown-menu {
+    overflow: hidden; }
+  .form-control me-2 {
+    display: none; } }

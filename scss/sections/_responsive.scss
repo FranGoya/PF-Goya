@@ -21,6 +21,12 @@
     .ContactoRedesh1 {
         overflow: hidden;
     }
+    .dropdown-menu {
+        overflow: hidden;
+    }
+    form .d-flex {
+        display: none;
+    }
 }
 
 
@@ -45,7 +51,12 @@
         font-size: small;
         text-align: center;
     }
-
-
+    .dropdown-menu {
+        overflow: hidden;
+    }
+    .form-control me-2 {
+        display: none;
+    }
+   
 
 }
